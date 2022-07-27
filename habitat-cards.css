@@ -1,0 +1,496 @@
+a:hover {
+  text-decoration: none;
+}
+.section-hidden {
+  display: none
+}
+
+/* .header-image{
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-image:url(https://firebasestorage.googleapis.com/v0/b/labocine-188b4.appspot.com/o/static%2Fhabitat_background_butterfly.jpg?alt=media&token=d4efc928-fbe3-4875-9716-55a3e5b5a654);
+} */
+
+.caption__main {
+  font-weight: 400;
+  font-size: 3.6rem;
+  font-family: "BebasNeue", sans-serif;
+  color: #FFF;
+}
+
+.caption__sub {
+  font-weight: 300;
+  color: #FFF;
+}
+
+.search__container {
+  padding: 3em 0;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.search__input {
+  width: 80%;
+  /*background-color: rgba(255, 255, 255, 0.4);*/
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  /*color: #FFF;*/
+  background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  padding: 12px 15px;
+  outline: 0;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  background-position: 98% center;
+}
+
+.search__input::placeholder {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.titles{
+  line-height: 1.6;
+}
+
+.text-ellipsis--2{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  /* Addition lines for 2 line or multiline ellipsis */
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+@media screen and (max-width: 700px) {
+  .search__container {
+    padding: 1em 0;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* ================================================== */
+/*code updated for landing page */
+/* ================================================== */
+
+
+.header-image{
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("LC_Habitat_gif-C.gif"); */
+  /* height: 90vh; */
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.header-images
+{
+  max-width: 100%;
+  height:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+
+}
+
+.header-image-left{
+  background-image: url("left.gif");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .header-image-left-md
+  {
+    filter: blur(0);
+    -webkit-filter: blur(0);  
+  }
+}
+
+.header-image-right{
+  background-image: url("right.gif");
+}
+
+.layer {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+}
+
+@media (min-width: 768px) {
+  .layer-md
+  {
+    opacity: 0;
+  }
+}
+
+.habitat-landing-container{
+  color: #000;
+  font-weight: 700;
+  top: 50%;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  padding-left: 2.5%;
+
+}
+
+.habitat-landing-desc
+{
+  /* font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+  font-family: 'DDINExpRegular';
+  font-weight: bold;
+  font-style: bold;
+  /* font-size: 1.12rem; */
+  text-align: justify;
+  /* font-size: 1.3vw; */ 
+  margin-top: 12vw;
+}
+
+@media (min-width: 768px) {
+  .landing-desc-margin-md
+  {
+    margin-top:0;
+  }
+}
+
+@media (min-width: 992px) {
+  .habitat-landing-desc-lg
+  {
+    font-size: 1.3vw; 
+  }
+}
+
+
+.habitat-landing-subtitle{
+  /* font-family: 'DDINExpRegular'; */
+  /* font-family: 'Avenir', Helvetica, sans-serif; */
+  /* font-family: 'Sen', sans-serif; */
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 800;
+  font-style: bold;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  /* color: rgb(3, 104, 45); */
+  color: #354f52;
+  margin-top: 5.5rem;
+}
+
+@media (min-width: 576px) {
+  .subtitle-sm
+  {
+    font-size: 1.7rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  .subtitle-md
+  {
+    font-size: 2.5vw; 
+  }
+  .landing-subtitle-margin-md
+  {
+    margin-top:0;
+  }
+}
+
+@media (min-width: 992px) {
+  .subtitle-lg
+  {
+    font-size: 2.2vw; 
+  }
+}
+
+/* ----------------------------------------------------------------
+join/update button
+---------------------------------------------------------------- */
+
+.habitat-landing-button{
+  padding: 30px;	
+  margin-top: 2.5rem;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  }
+  
+  @media (min-width: 768px) {
+    .habitat-landing-button-md{
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .habitat-landing-button-lg{
+      margin-top: 1rem;
+    }
+  }
+  
+  .wrapper{
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  @media (min-width: 768px) {
+    .wrapper-md{
+      bottom: 25%;
+    }
+  }
+  
+  .link_wrapper{
+  position: relative;
+  }
+  
+  .habitat-landing-button-link{
+  display: block;
+  /* width: 250px;
+  height: 40px; */
+  padding: 8px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #1ECD97;
+  border: 3px solid #1ECD97;
+  transition: all .30s;
+  border-radius: 5px;
+  line-height: 0.97;
+  }
+  
+  .arrow-icon{
+  width: 35px;
+  height: 35px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .30s;
+  }
+  
+  .arrow-icon svg{
+  width: 25px;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  left: calc(50% - 12.5px);
+  transform: rotate(-45deg);
+  fill: #1ECD97;
+  transition: all .30s;
+  }
+  
+  .habitat-landing-button-link:hover{
+  padding: 8px 25px;
+  border: 3px solid #1ECD97;
+  background: transparent;
+  color: #1ECD97;
+  text-decoration: none;
+  }
+  
+  .habitat-landing-button-link:hover + .arrow-icon{
+  border: 3px solid #1ecd97;
+  right: -20%;
+  }
+
+
+  .landing-button-link-orange{
+    display: block;
+    padding: 8px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #ff773d;
+    border: 3px solid #ff773d;
+    transition: all .30s;
+    border-radius: 5px;
+    line-height: 0.97;
+    }
+    
+    .landing-button-link-orange:hover{
+    padding: 8px 15px;
+    border: 3px solid #ff773d;
+    background: transparent;
+    color: #ff773d;
+    text-decoration: none;
+    }
+
+
+
+
+/* ----------------------------------------------------------------
+search section
+---------------------------------------------------------------- */
+
+.habitat-landing-searchSection{
+  position: sticky;
+  /* background: linear-gradient(to right, rgba(54, 63, 78, 0.5), rgba(172, 224, 249, 0.5), rgba(194, 233, 251, 0.5), rgba(218, 226, 239, 0.7)); */
+  height: 40px;
+  padding: 0; 
+  margin-top: 0rem;
+}
+
+@media (min-width: 768px) {
+  .habitat-landing-searchSection-md
+  {
+    margin-top: 0;
+  }
+}
+
+.habitat-landing-searchInput {
+  border: none;
+  margin-top: -300px;
+  width: 95%;
+  transition: transform 250ms ease-in-out;
+  font-size: 17px;
+  font-weight: 500;
+  background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  padding: 5px 20px;
+  outline: 0;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  border-radius: 30px;
+  background-position: 96% center;
+}
+
+.habitat-landing-searchInput:focus {
+  outline: none;
+}
+
+.habitat-landing-searchInput::placeholder {
+  color: #1ECD97;
+}
+
+.search__input {
+  width: 80%;
+  /*background-color: rgba(255, 255, 255, 0.4);*/
+  transition: transform 250ms ease-in-out;
+  /* font-size: 14px; */
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Arial;
+  line-height: 18px;
+  /*color: #FFF;*/
+  background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  padding: 12px 15px;
+  outline: 0;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  background-position: 98% center;
+}
+
+.search__input::placeholder {
+  color: #000000;
+}
+
+
+/* ----------------------------------------------------------------
+custom viewport heights
+---------------------------------------------------------------- */
+
+
+@media (max-width: 576px) {
+  
+  .min-vh-20{
+      min-height: 20vh;
+      }
+  .min-vh-35{
+          min-height: 35vh;
+          }
+  .min-vh-40{
+    min-height: 40vh;
+    }
+  .min-vh-55{
+    min-height: 55vh;
+    }
+
+  .display-xs{
+      background-position: 50% 35%;
+
+      }
+
+  .max-vh-35{
+    max-height: 35vh;
+    }
+  }
+
+@media (min-width: 576px) {
+
+  .min-vh-sm-35 {
+    min-height: 35vh;
+    }
+  .min-vh-sm-40 {
+      min-height: 40vh;
+      }
+  
+  .min-vh-sm-55 {
+    min-height: 55vh;
+    }
+
+  .max-vh-sm-35{
+    max-height: 35vh;
+    }
+}
+
+@media (max-width: 768px) {
+  .display-sm{
+      background-position: 50% 35%;
+
+      }
+}
+
+@media (min-width: 768px) {
+
+  .min-vh-md-75 {
+      min-height: 75vh;
+      }
+  }
+
+@media (min-width: 992px) {
+  .max-vh-lg-95 {
+      max-height: 95vh;
+    }
+  .max-vh-lg-90 {
+    max-height: 90vh;
+  }
+  .min-vh-lg-95 {
+      min-height: 95vh;
+    }
+  .min-vh-lg-90 {
+      min-height: 90vh !important;
+  }
+}
+

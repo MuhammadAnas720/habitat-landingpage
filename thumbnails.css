@@ -137,20 +137,214 @@ a:hover{
 
 }
 
+
+
 .bg-image{
     background:url(one.png);
     backdrop-filter: blur(4px);
     background-size: contain;
 }
 
-
 .card-profile-9{
-    /* background: orange; */
     background-image: url(treesBackground_darker.png);
     background-size: cover;
     backdrop-filter: blur(18px);
 }
+
+.card-profile-10{
+    background-image: url(treesBackground_darker.png);
+    background-size: cover;
+    backdrop-filter: blur(18px);
+}
+
+
+
 .card-profile-subtitle-9{
     font-size: 0.95rem;
     color: black;
 }
+
+.layer-card-3{
+    background-color: rgba(76, 185, 80, 1);
+    background: linear-gradient(0deg, rgba(253, 187, 45) 0%, rgb(34, 193, 195) 100%);
+    background: linear-gradient(0, #2dc653 0%, rgba(76, 185, 80, 1) 80%, rgba(34, 195, 139, 0.5) 100%);
+    background-color: rgba(76, 185, 80, 1);
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;  
+  }
+
+  .layer-card-standard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;  
+  }
+
+  .green-olive
+  {
+    background-color: #538d22;
+  }
+
+  .green-1
+  {
+    background-color: #57cc99;
+  }
+
+  .green-2
+  {
+    background-color: #2b9348;
+  }
+
+  .green-3
+  {
+    background-color: #55a630;
+  }
+
+  .green-4
+  {
+    background: linear-gradient(0, #87ec9b 5%,  #ffe4a5 130%);
+  }
+
+  .green-5
+  {
+    background-color: #60d377;
+  }
+
+  .green-6
+  {
+    background: linear-gradient(180deg, #93e5ab 0%,  #65b891 100%);
+  }
+
+  .green-7
+  {
+    background: linear-gradient(0, #5b9279 5%,  #8fcb9b 95%);
+  }
+
+  .img-thumbnail-1 {
+    padding: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 3px solid rgba(255, 255, 255, 1); */
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-profile-name-2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #354f52;
+    text-align: center;
+}
+
+.card-profile-subtitle-10{
+    font-size: 0.95rem;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.body-1{
+    margin-left: 0;
+}
+
+/* .card-profile-10:hover img{
+    padding: 0.2rem;
+    transform: scale(0.4) translate(-70%,-70%);
+    transition: 0.2s ease;
+}
+
+.card-profile-10:hover .body-1{
+    transform: translate(0,-120%);
+    transition: 0.2s ease;
+} */
+
+.card-profile-10:hover .img-lg{
+    padding: 0.2rem;
+    margin-top: -35%;
+    margin-left: -30%;
+    transform: scale(0.45);
+    transition: 0.2s ease;
+    text-align: left;
+}
+
+@media (min-width: 1200px) {
+    .card-profile-10:hover .img-xl{
+        padding: 0.2rem;
+        margin-top: -35%;
+        margin-left: -45%;
+        transform: scale(0.45);
+        transition: 0.2s ease;
+        text-align: left;
+    }
+  }
+
+.card-profile-10:hover .body-1{
+    margin-left: -6.25%;
+    transform: scale(0.9) translate(0,-125%);    
+    transition: 0.2s ease;
+}
+
+.card-profile-10:hover .card-profile-name-2{
+    margin-bottom: 0.5rem;
+    text-align: left;
+    line-height: 0.9;
+
+}
+
+.card-profile-10:hover .card-profile-subtitle-10{
+    text-align: left;
+
+}
+
+.desc-box{
+    background: green;
+    height: 125px;
+    margin-top: -125px;
+    margin-left: 100%;
+    width: 100%;
+    
+}
+
+.card-profile-10:hover .desc-box{
+    margin-left: 0;
+    transition: 0.2s ease;
+}
+
+.desc-box-content{
+    /* height: 130px; */
+    margin-top: -125px;
+    margin-left: 100%;
+    width: 100%;
+    color: #f8fff9;
+    z-index: 5;
+    font-size: 0.95rem;
+    line-height: 0.95;
+    font-weight: 500;
+    padding: 10px 12px 0 18px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: top;
+}
+
+.card-profile-10:hover .desc-box-content{
+    margin-left:0;
+    transition: 0.2s ease;
+}
+
+.text-ellipsis--8{
+    text-overflow: clip;
+    overflow:hidden;
+    /* Addition lines for 2 line or multiline ellipsis */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
